@@ -22,7 +22,7 @@ ForEach ($Line in Get-Content $FILE_USED)
     # Write-Output "SUM IS $SUM"
     # Write-Output "GG IS $GLOBAL_GREATEST"
 
-    If ($Line.Equals(''))
+    If ($Line -EQ '')
     {
         If ($SUM -GT $GLOBAL_GREATEST)
         {
